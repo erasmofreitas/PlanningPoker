@@ -29,8 +29,8 @@ namespace PlanningPoker.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = Configuration["ConnectionStrings:DefaultConnection"];
-            services.AddDbContext<SqlContext>(options => options.UseNpgsql(connection));
+            var conn = Configuration.GetConnectionString("DefaultConnection");
+            services.AddDbContext<SqlContext>(options => options.UseNpgsql(conn));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

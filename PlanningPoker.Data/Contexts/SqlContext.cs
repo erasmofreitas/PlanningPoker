@@ -12,8 +12,9 @@ namespace PlanningPoker.Data.Contexts
         public SqlContext()
         {
         }
-
-        public SqlContext(DbContextOptions<SqlContext> options) : base(options) { }
+        public SqlContext(DbContextOptions<SqlContext> options) : base(options)
+        {
+        }
 
         public DbSet<Cartas> Cartas { get; set; }
 
