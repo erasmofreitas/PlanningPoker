@@ -1,6 +1,7 @@
-﻿using PlanningPoker.Application.DTO;
+﻿using PlanningPoker.Application.DTO.DTO;
 using PlanningPoker.Application.Interfaces;
-using PlanningPoker.Domain.Interfaces.Services;
+using PlanningPoker.CrossCutting.Interfaces;
+using PlanningPoker.Domain.Core.Interfaces.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;

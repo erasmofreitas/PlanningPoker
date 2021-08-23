@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlanningPoker.Application.DTO\PlanningPoker.Application.DTO.csproj" />
+    <ProjectReference Include="..\PlanningPoker.Domain\PlanningPoker.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

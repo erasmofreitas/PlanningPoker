@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PlanningPoker.Application.DTO;
+using PlanningPoker.Application.DTO.DTO;
 using PlanningPoker.Application.Interfaces;
 using System;
 using System.Collections.Generic;

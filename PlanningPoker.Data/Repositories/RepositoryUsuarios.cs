@@ -1,6 +1,6 @@
 ﻿using PlanningPoker.Data.Contexts;
 using PlanningPoker.Domain.Entities;
-using PlanningPoker.Domain.Interfaces.Repositories;
+using PlanningPoker.Domain.Core.Interfaces.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Text;

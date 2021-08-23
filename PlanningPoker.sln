@@ -23,7 +23,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 -
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanningPoker.Data", "PlanningPoker.Data\PlanningPoker.Data.csproj", "{4E30C5B1-ABE5-467D-9C48-E5A26B958F39}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanningPoker.CrossCutting", "PlanningPoker.Utils\PlanningPoker.CrossCutting.csproj", "{B7016D97-2BDE-40D8-B99E-59CA42CF7757}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanningPoker.CrossCutting.IOC", "PlanningPoker.Utils\PlanningPoker.CrossCutting.IOC.csproj", "{B7016D97-2BDE-40D8-B99E-59CA42CF7757}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanningPoker.CrossCutting.Adapter", "PlanningPoker.CrossCutting.Adapter\PlanningPoker.CrossCutting.Adapter.csproj", "{452BAFCD-7CAA-417F-B9B1-7F8DAC4825B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanningPoker.Domain.Core", "PlanningPoker.Domain.Core\PlanningPoker.Domain.Core.csproj", "{AA7845B7-0141-4DF0-AE74-8FB7715CDB53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlanningPoker.Domain.Services", "PlanningPoker.Domain.Services\PlanningPoker.Domain.Services.csproj", "{7BC63556-3367-41D9-B10E-454580FE7436}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanningPoker.Application.DTO", "PlanningPoker.Application.DTO\PlanningPoker.Application.DTO.csproj", "{A585A546-863F-43D6-88D1-03666E676F5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +59,22 @@ Global
 		{B7016D97-2BDE-40D8-B99E-59CA42CF7757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7016D97-2BDE-40D8-B99E-59CA42CF7757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7016D97-2BDE-40D8-B99E-59CA42CF7757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452BAFCD-7CAA-417F-B9B1-7F8DAC4825B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452BAFCD-7CAA-417F-B9B1-7F8DAC4825B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452BAFCD-7CAA-417F-B9B1-7F8DAC4825B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452BAFCD-7CAA-417F-B9B1-7F8DAC4825B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7845B7-0141-4DF0-AE74-8FB7715CDB53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7845B7-0141-4DF0-AE74-8FB7715CDB53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7845B7-0141-4DF0-AE74-8FB7715CDB53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7845B7-0141-4DF0-AE74-8FB7715CDB53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BC63556-3367-41D9-B10E-454580FE7436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BC63556-3367-41D9-B10E-454580FE7436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BC63556-3367-41D9-B10E-454580FE7436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BC63556-3367-41D9-B10E-454580FE7436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A585A546-863F-43D6-88D1-03666E676F5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A585A546-863F-43D6-88D1-03666E676F5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A585A546-863F-43D6-88D1-03666E676F5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A585A546-863F-43D6-88D1-03666E676F5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +87,10 @@ Global
 		{E20FF0B9-A5B9-4766-9D55-4441B770A9CF} = {590459A0-7B61-4072-BFC4-27E2D07CF102}
 		{4E30C5B1-ABE5-467D-9C48-E5A26B958F39} = {8C5448C9-AA91-4C9E-8D0F-DDB7B43DD4B2}
 		{B7016D97-2BDE-40D8-B99E-59CA42CF7757} = {E20FF0B9-A5B9-4766-9D55-4441B770A9CF}
+		{452BAFCD-7CAA-417F-B9B1-7F8DAC4825B9} = {E20FF0B9-A5B9-4766-9D55-4441B770A9CF}
+		{AA7845B7-0141-4DF0-AE74-8FB7715CDB53} = {CCC72E11-86B4-4E1E-AA74-B50F41D66EB5}
+		{7BC63556-3367-41D9-B10E-454580FE7436} = {CCC72E11-86B4-4E1E-AA74-B50F41D66EB5}
+		{A585A546-863F-43D6-88D1-03666E676F5C} = {9043A453-9890-49A0-B3A0-F475B1CDBD71}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D608D85-6F2E-4FD2-9A7B-85DC4E653E73}

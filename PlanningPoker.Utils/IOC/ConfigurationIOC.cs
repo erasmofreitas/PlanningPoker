@@ -4,9 +4,10 @@ using PlanningPoker.Application.Services;
 using PlanningPoker.CrossCutting.Interfaces;
 using PlanningPoker.CrossCutting.Mappings;
 using PlanningPoker.Data.Repositories;
-using PlanningPoker.Domain.Interfaces.Repositories;
-using PlanningPoker.Domain.Interfaces.Services;
+using PlanningPoker.Domain.Core.Interfaces.Repositories;
+using PlanningPoker.Domain.Core.Interfaces.Services;
 using PlanningPoker.Domain.Services;
+using PlanningPoker.Domain.Services.Services;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -28,9 +29,9 @@ namespace PlanningPoker.CrossCutting.IOC
 
             #region IOC Services
             builder.RegisterType<ServiceCartas>().As<IServiceCartas>();
-            builder.RegisterType<IServiceHistorias>().As<IServiceHistorias>();
-            builder.RegisterType<IServiceUsuarios>().As<IServiceUsuarios>();
-            builder.RegisterType<IServiceVotos>().As<IServiceVotos>();
+            builder.RegisterType<ServiceHistorias>().As<IServiceHistorias>();
+            builder.RegisterType<ServiceUsuarios>().As<IServiceUsuarios>();
+            builder.RegisterType<ServiceVotos>().As<IServiceVotos>();
             #endregion
 
             #region IOC Repositorys SQL

@@ -5,7 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.2.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PlanningPoker.Application.DTO\PlanningPoker.Application.DTO.csproj" />
     <ProjectReference Include="..\PlanningPoker.Application\PlanningPoker.Application.csproj" />
+    <ProjectReference Include="..\PlanningPoker.Data\PlanningPoker.Data.csproj" />
+    <ProjectReference Include="..\PlanningPoker.Utils\PlanningPoker.CrossCutting.IOC.csproj" />
   </ItemGroup>
 
 

@@ -5,7 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PlanningPoker.Domain\PlanningPoker.Domain.csproj" />
+    <ProjectReference Include="..\PlanningPoker.Application.DTO\PlanningPoker.Application.DTO.csproj" />
+    <ProjectReference Include="..\PlanningPoker.CrossCutting.Adapter\PlanningPoker.CrossCutting.Adapter.csproj" />
+    <ProjectReference Include="..\PlanningPoker.Domain.Core\PlanningPoker.Domain.Core.csproj" />
   </ItemGroup>
 
 </Project>
