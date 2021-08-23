@@ -7,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using PlanningPoker.CrossCutting.IOC;
 using PlanningPoker.Data.Contexts;
 using System;
@@ -31,6 +32,21 @@ namespace PlanningPoker.API
             var connection = Configuration["ConnectionStrings:DefaultConnection"];
             services.AddDbContext<SqlContext>(options => options.UseNpgsql(connection));
             services.AddControllers();
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "Planning Poker",
+                    Version = "v1",
+                    Description = "API Planning Poker",
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Erasmo Freitas",
+                        Email = string.Empty,
+                        Url = new Uri("http://localhost")
+                    }
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +56,12 @@ namespace PlanningPoker.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Planning Poker");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseRouting();
 
